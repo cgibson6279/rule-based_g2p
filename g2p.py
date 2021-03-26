@@ -26,7 +26,10 @@ G2P = (
     )
     @ pynini.cdrewrite(pynini.cross("h", ""), "", "", SIGMA_STAR)
     @ pynini.cdrewrite(
-        pynini.cross("o", "u"), "", pynini.union("[EOS]", "s", "r"), SIGMA_STAR
+        pynini.cross("o", "u"),
+        "",
+        pynini.union("[EOS]", pynini.accep("s[EOS]"), "r"),
+        SIGMA_STAR,
     )
     @ pynini.cdrewrite(
         pynini.cross("e", "i"),
