@@ -36,7 +36,23 @@ class G2PTest(unittest.TestCase):
     # Once again, remove this comment from your submission when you're done.
 
     def test_vez(self):
+        self.rewrites("cases", "kazis")
+        self.rewrites("cimento", "simentu")
+        self.rewrites("chato", "ʃatu")
+        self.rewrites("casa", "kaza")
+        self.rewrites("filho", "fiʎu")
+        self.rewrites("homem", "omem")
+        self.rewrites("ninho", "niɲu")
         self.rewrites("vez", "ves")
+        #stretch goal
+        self.rewrites("árvore", "arvoɾi")
+        self.rewrites("braço", "bɾasu")
+        self.rewrites("carro", "kaʁu")
+        self.rewrites("interesse", "inteɾesi")
+        self.rewrites("partes", "paɾtʃis")
+        self.rewrites("rápido", "ʁapidu")
+        self.rewrites("verdade", "veɾdadʒi")
+
 
 
 if __name__ == "__main__":
