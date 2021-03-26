@@ -19,22 +19,6 @@ class G2PTest(unittest.TestCase):
         ostring = g2p.g2p(istring)
         self.assertEqual(ostring, expected_ostring)
 
-    # TODO: write unit tests demonstrating that `g2p.g2p` produces correct
-    # outputs. Test all of the following:
-    #
-    # graphemic form        phonological form
-    #
-    # cases                 kazis
-    # cimento               simentu
-    # chato                 ʃatu
-    # casa                  kaza
-    # filho                 fiʎu
-    # homem                 omem
-    # ninho                 niɲu
-    # vez                   ves
-    #
-    # Once again, remove this comment from your submission when you're done.
-
     def test_vez(self):
         self.rewrites("cases", "kazis")
         self.rewrites("cimento", "simentu")
@@ -44,15 +28,14 @@ class G2PTest(unittest.TestCase):
         self.rewrites("homem", "omem")
         self.rewrites("ninho", "niɲu")
         self.rewrites("vez", "ves")
-        #stretch goal
-        self.rewrites("árvore", "arvoɾi")
+        # stretch goal
+        self.rewrites("árvore", "arvuɾi")
         self.rewrites("braço", "bɾasu")
         self.rewrites("carro", "kaʁu")
         self.rewrites("interesse", "inteɾesi")
         self.rewrites("partes", "paɾtʃis")
         self.rewrites("rápido", "ʁapidu")
         self.rewrites("verdade", "veɾdadʒi")
-
 
 
 if __name__ == "__main__":
