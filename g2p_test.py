@@ -20,21 +20,49 @@ class G2PTest(unittest.TestCase):
         self.assertEqual(ostring, expected_ostring)
 
     def test_vez(self):
-        self.rewrites("cases", "kazis")
-        self.rewrites("cimento", "simentu")
-        self.rewrites("chato", "ʃatu")
-        self.rewrites("casa", "kaza")
-        self.rewrites("filho", "fiʎu")
-        self.rewrites("homem", "omem")
-        self.rewrites("ninho", "niɲu")
         self.rewrites("vez", "ves")
-        # stretch goal
+
+    def test_cases(self):
+        self.rewrites("cases", "kazis")
+
+    def test_cimento(self):
+        self.rewrites("cimento", "simentu")
+
+    def test_chato(self):
+        self.rewrites("chato", "ʃatu")
+
+    def test_casa(self):
+        self.rewrites("casa", "kaza")
+
+    def test_filho(self):
+        self.rewrites("filho", "fiʎu")
+
+    def test_homem(self):
+        self.rewrites("homem", "omem")
+
+    def test_ninho(self):
+        self.rewrites("ninho", "niɲu")
+
+    # stretch goal
+    def test_árvore(self):
         self.rewrites("árvore", "arvuɾi")
+
+    def test_braço(self):
         self.rewrites("braço", "bɾasu")
+
+    def test_carro(self):
         self.rewrites("carro", "kaʁu")
+
+    def test_interesse(self):
         self.rewrites("interesse", "inteɾesi")
+
+    def test_partes(self):
         self.rewrites("partes", "paɾtʃis")
+
+    def test_rápido(self):
         self.rewrites("rápido", "ʁapidu")
+
+    def test_verdade(self):
         self.rewrites("verdade", "veɾdadʒi")
 
 
